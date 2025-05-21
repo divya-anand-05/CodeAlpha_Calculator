@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+    
+  <div class="calculator">
+    <div class="top-bar">
+        <button id="settingsBtn" onclick="toggleSettingsMenu()">☰</button>
+        <div id="settingsMenu" class="settings-menu hidden">
+          <button onclick="toggleTheme()">Toggle Theme</button>
+          <button onclick="showHistory()">View History</button>
+        </div>
+      </div>
+      
+      <div class="history" id="history"></div>
+      <textarea id="display" rows="2" readonly></textarea>
+      <div class="preview" id="preview"></div>
+    <div class="buttons">
+      <!-- Scientific Functions -->
+       <button id="degBtn" onclick="setDegreeMode()" class="angle-mode active">DEG</button>
+      <button id="radBtn" onclick="setRadianMode()" class="angle-mode">RAD</button>
+      <button id="invBtn" onclick="toggleInv()">INV</button>
+     <button onclick="clearDisplay()">AC</button>
+     <button onclick="deleteLast()" style="color: red">❌</button>
+
+      <button onclick="appendFunction('log10(')">log</button>
+      <button onclick="appendFunction('ln(')">ln</button>
+      <button id="sinBtn" onclick="appendFunction('sin(')" >sin</button>
+      <button id="cosBtn" onclick="appendFunction('cos(')">cos</button>
+      <button id="tanBtn" onclick="appendFunction('tan(')">tan</button>
+
+      
+      
+
+     <button onclick="appendFunction('!')">!</button>
+      <button onclick="appendFunction('(')">(</button>
+      <button onclick="appendFunction(')')">)</button>
+      <button onclick="appendFunction('%')">%</button>
+      <button onclick="appendFunction('/')">/</button>
+      
+<button onclick="appendFunction('^')">^</button>
+      <button onclick="appendFunction('7')">7</button>
+      <button onclick="appendFunction('8')">8</button>
+      <button onclick="appendFunction('9')">9</button>
+      <button onclick="appendFunction('*')">*</button>
+
+      <button onclick="appendFunction('sqrt(')">√</button>
+      <button onclick="appendFunction('4')">4</button>
+      <button onclick="appendFunction('5')">5</button>
+      <button onclick="appendFunction('6')">6</button>
+      <button onclick="appendFunction('-')">-</button>
+
+      
+      <button onclick="appendFunction('Math.PI')">π</button>
+      <button onclick="appendFunction('1')">1</button>
+      <button onclick="appendFunction('2')">2</button>
+      <button onclick="appendFunction('3')">3</button>
+      <button onclick="appendFunction('+')">+</button>
+
+      <button onclick="appendFunction('e')">e</button>
+      <button onclick="appendFunction('00')">00</button>
+      <button onclick="appendFunction('0')">0</button>
+      <button onclick="appendFunction('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+
+      
+      
+      
+      
+    </div>
+    
+      
+  </div>
+
+  <!-- History Screen -->
+<div id="historyScreen" class="history-screen hidden">
+    <div class="history-header">
+      <h2>Calculation History</h2>
+      <button onclick="closeHistory()" class="close-btn">✖</button>
+    </div>
+    <div id="historyList" class="history-list">
+        
+      <!-- History items will be added here -->
+    </div>
+  </div>
+  
+
+  <script src="script1.js"></script>
+</body>
+</html>
