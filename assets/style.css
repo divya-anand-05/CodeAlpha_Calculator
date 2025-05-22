@@ -54,20 +54,68 @@ body.dark-mode .calculator{
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
-#heading{
-  position: absolute;
-  margin:0px;
-  color:#b7acff;
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+#heading {
+  margin: 0;
+  color: #b7acff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  right:600px;
   letter-spacing: 2px;
-  
 }
+
+.top-bar {
+  position: absolute;
+  right: 15px;
+}
+
+.settings-menu {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  min-width: 160px; /* Makes it look rectangular */
+  overflow: hidden; /* Rounded corners apply to buttons inside */
+}
+.settings-menu.hidden {
+  display: none;
+}
+
+.settings-menu button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.settings-menu button:hover {
+  background: #e6e6ff;
+  color: #6c63ff;
+}
+
+
 
 body.dark-mode #heading{
   text-shadow:  0 8px 16px rgba(255, 255, 255, 0.2);;
 }
+
+
 
 #display {
   width: 100%;
