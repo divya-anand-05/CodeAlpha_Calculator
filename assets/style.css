@@ -54,6 +54,21 @@ body.dark-mode .calculator{
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
+#heading{
+  position: absolute;
+  margin:0px;
+  color:#b7acff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  right:600px;
+  letter-spacing: 2px;
+  
+}
+
+body.dark-mode #heading{
+  text-shadow:  0 8px 16px rgba(255, 255, 255, 0.2);;
+}
+
 #display {
   width: 100%;
   font-size: 1.5rem;
@@ -127,7 +142,9 @@ button:hover {
 
 @media (max-width: 400px) {
   .buttons {
-    grid-template-columns: repeat(4, 1fr); /* Fewer buttons per row on small screens */
+    grid-template-columns: repeat(4, 1fr); 
+    font-size: 0.8rem ; 
+    gap: 5px;
   }
 }
 
