@@ -54,6 +54,7 @@ body.dark-mode .calculator{
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
+
 .top-header {
   display: flex;
   justify-content: center;
@@ -114,8 +115,6 @@ body.dark-mode .calculator{
 body.dark-mode #heading{
   text-shadow:  0 8px 16px rgba(255, 255, 255, 0.2);;
 }
-
-
 
 #display {
   width: 100%;
@@ -190,7 +189,7 @@ button:hover {
 
 @media (max-width: 400px) {
   .buttons {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
     font-size: 0.8rem ; 
     gap: 5px;
   }
@@ -223,6 +222,11 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+
+
+
+
 
 
 .history-screen {
