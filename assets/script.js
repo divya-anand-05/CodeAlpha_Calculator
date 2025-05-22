@@ -207,3 +207,42 @@ function closeHistory() {
       
     }
 }
+
+document.addEventListener("keydown", function(event) {
+  const key = event.key;
+
+  if (!isNaN(key)) {
+    appendFunction(key); // Numbers 0–9
+  }
+
+  const allowedKeys = {
+    '+': '+',
+    '-': '-',
+    '*': '*',
+    '/': '/',
+    '%': '%',
+    '.': '.',
+    '(': '(',
+    ')': ')',
+    '^': '^',
+    '!': '!',
+  };
+
+  if (allowedKeys[key]) {
+    appendFunction(allowedKeys[key]);
+  }
+
+  if (key === 'Enter') {
+    event.preventDefault(); // Prevent form submission if any
+    calculate(); // Calculate on Enter key
+  }
+
+  if (key === 'Backspace') {
+    deleteLast(); // Delete last character
+  }
+
+  if (key === 'Escape') {
+    clearDisplay(); // Clear display on Escape
+  }
+});
+
