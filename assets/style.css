@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right,#93bef7, #f0e7ff); /* Light gradient */
+  background: linear-gradient(to bottom right,#93bef7, #f0e7ff); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@ body {
 }
 
 body.dark-mode {
-  background: linear-gradient(to bottom right, #1a1a2e, #16213e); /* Dark gradient */
+  background: linear-gradient(to bottom right, #1a1a2e, #16213e); 
   color: #fff;
 }
 
@@ -85,8 +85,8 @@ body.dark-mode .calculator{
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   z-index: 100;
-  min-width: 160px; /* Makes it look rectangular */
-  overflow: hidden; /* Rounded corners apply to buttons inside */
+  min-width: 160px; 
+  overflow: hidden; 
 }
 .settings-menu.hidden {
   display: none;
@@ -225,11 +225,6 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
-
-
-
 
 
 .history-screen {
