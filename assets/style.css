@@ -193,6 +193,9 @@ button:hover {
     font-size: 0.8rem ; 
     gap: 5px;
   }
+   .history-screen{
+    max-width: 300px;
+  }
 }
 
 
