@@ -55,21 +55,16 @@ function calculate() {
           .replace(/sqrt\(/g, 'Math.sqrt(');
       }
   
-      // Common replacements
+      
       expression = expression
         .replace(/\^/g, '**')
         .replace(/π/g, 'Math.PI')
         .replace(/\be\b/g, 'Math.E');
-
-      // Evaluate safely
+    
       display.value = Function('return ' + expression)();
      let result = eval(expression);
 addToHistory(`${expression} = ${result}`);
 display.value = result;
-
-// const result = Function("return " + expression)();
-// display.value = result;
-// addToHistory(`${expression} = ${result}`);
       
     } catch (error) {
       display.value = "Error";
@@ -77,8 +72,6 @@ display.value = result;
     
   }
   
-
-
 function toggleTheme(){
     document.body.classList.toggle("dark-mode");
 }
@@ -169,19 +162,6 @@ function showHistory() {
 function closeHistory() {
   document.getElementById("historyScreen").style.display="none";
 }
-
-
-//INV button
-// function toggleInv() {
-//     isInverse = !isInverse;
-//     const invBtn = document.getElementById("invBtn");
-//     invBtn.classList.toggle("active");
-//     invBtn.textContent = isInverse ? "INV " : "INV";
-
-//     document.getElementById("sinBtn").textContent = isInverse ? "asin" : "sin";
-//     document.getElementById("cosBtn").textContent = isInverse ? "acos" : "cos";
-//     document.getElementById("tanBtn").textContent = isInverse ? "atan" : "tan";
-//   }
   
  function toggleInv() {
     isInverse = !isInverse;
@@ -233,7 +213,7 @@ document.addEventListener("keydown", function(event) {
   }
 
   if (key === 'Enter') {
-    event.preventDefault(); // Prevent form submission if any
+    event.preventDefault(); 
     calculate(); // Calculate on Enter key
   }
 
