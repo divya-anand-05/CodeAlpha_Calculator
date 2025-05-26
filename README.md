@@ -51,7 +51,7 @@ This is an advanced calculator web application built using **HTML**, **CSS**, an
     Designing a user-friendly scientific calculator
 
     Enhancing logic-building and debugging skills
-```
+
 ---
 
     💬 This project challenged me to push my JavaScript logic and improved my ability to build real-world web applications from scratch. Every button click and function taught me something new! 😊
