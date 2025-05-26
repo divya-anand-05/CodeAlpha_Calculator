@@ -1,64 +1,58 @@
-🧮 Advanced Calculator Web App
-💼 Internship Task 2 – Code Alpha
+# 🧮 Advanced Calculator Web App
 
-This is an advanced calculator web application built using HTML, CSS, and JavaScript as part of my Code Alpha Internship Task 2. It supports both basic and scientific operations, wrapped in a clean, responsive user interface.
-📌 Features
-✅ Basic Operations
+## 💼 Internship Task 2 – Code Alpha
 
-    Addition +
+This is an advanced calculator web application built using **HTML**, **CSS**, and **JavaScript** as part of my **Code Alpha Internship Task 2**. The calculator performs both basic and scientific operations with a clean, responsive UI.
 
-    Subtraction −
+---
 
-    Multiplication ×
+## 📌 Features
 
-    Division ÷
+✅ Basic Operations  
+- Addition `+`  
+- Subtraction `−`  
+- Multiplication `×`  
+- Division `÷`  
 
-✅ Scientific Functions
+✅ Scientific Functions  
+- Trigonometric: `sin`, `cos`, `tan`  
+- Logarithmic: `log`, `ln`  
+- Exponentiation: `x^y`, `e^x`  
+- Square Root: `√`  
+- Factorial: `x!`  
+- Inverse: `1/x`  
+- Parentheses support  
+- Pi `π` and Euler’s number `e`  
+- Degree / Radian toggle  
 
-    Trigonometric: sin, cos, tan
+✅ UI/UX  
+- Responsive layout  
+- Dark-themed design (optional)  
+- Keyboard input supported  
+- Clear (`C`) and backspace functionality  
 
-    Logarithmic: log, ln
+---
 
-    Exponentiation: x^y, e^x
+## 🛠️ Tech Stack
 
-    Square Root: √
+- **HTML** – Structure  
+- **CSS** – Styling and Layout  
+- **JavaScript** – Logic and Interactivity  
 
-    Factorial: x!
+---
 
-    Inverse: 1/x
-
-    Parentheses support ()
-
-    Constants: π (Pi), e (Euler’s number)
-
-    Degree / Radian toggle
-
-✅ UI/UX Highlights
-
-    Responsive layout
-
-    Optional dark theme
-
-    Keyboard input supported
-
-    Clear (C) and backspace functionality
-
-🛠️ Tech Stack
-
-    HTML – Structure of the calculator
-
-    CSS – Styling and responsive layout
-
-    JavaScript – Functionality and logic implementation
 
 📚 What I Learned
 
+
     JavaScript DOM manipulation
 
-    Handling edge cases in mathematical operations
+    Handling edge cases in math operations
 
-    Designing and structuring a scientific calculator
+    Designing a user-friendly scientific calculator
 
-    Strengthened logic-building and debugging skills
+    Enhancing logic-building and debugging skills    
+                
+---
 
-    💬 This project challenged me to push my JavaScript skills and taught me how to build real-world web applications from scratch. Every button click and function taught me something new! 😊  
+    💬 This project challenged me to push my JavaScript logic and improved my ability to build real-world web applications from scratch. Every button click and function taught me something new! 😊                          
